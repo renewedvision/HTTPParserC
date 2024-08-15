@@ -9,10 +9,11 @@
 #ifndef INCLUDE_LLHTTP_ITSELF_H_
 #define INCLUDE_LLHTTP_ITSELF_H_
 #ifdef __cplusplus
-extern "C" {
-#endif
-
 #include <stdint.h>
+extern "C" {
+#else
+#include <stdint.h>
+#endif
 
 typedef struct llhttp__internal_s llhttp__internal_t;
 struct llhttp__internal_s {
